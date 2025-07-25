@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【参加無料】AIライティング副業入門 勉強会</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="【参加無料】AIライティング副業入門 勉強会">
+    <meta property="og:description" content="クラウドソーシングサイトで副業案件を獲得するロードマップ。SEOライター、セールスライターを目指す方におススメの無料勉強会です。">
+    <meta property="og:site_name" content="AIライティング副業入門 勉強会">
+    <meta property="og:url" content="">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:updated_time" content="2025-07-25T12:00:00+09:00">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="【参加無料】AIライティング副業入門 勉強会">
+    <meta name="twitter:description" content="クラウドソーシングサイトで副業案件を獲得するロードマップ。SEOライター、セールスライターを目指す方におススメの無料勉強会です。">
+    <meta name="twitter:site" content="@">
+    
+    <!-- 一般的なメタタグ -->
+    <meta name="description" content="【参加無料】AIライティング副業入門 勉強会 - クラウドソーシングサイトで副業案件を獲得するロードマップ。SEOライター、セールスライターを目指す方におススメ。">
+    <meta name="keywords" content="AIライティング,副業,入門,勉強会,無料,SEO,セールスライター,クラウドソーシング">
+    <meta name="author" content="AIライティング副業入門 勉強会">
+    
+    <!-- キャッシュ制御 -->
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+
+    <style>
+        :root {
+            --bg-color: #fdfaf6;
+            --text-color: #2c3e50;
+            --accent-color: #c0a062;
+            --card-bg-color: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* ヘッダー */
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #c0a062, #8b7355, #a4884f);
+            border-bottom: 2px solid var(--accent-color);
+            position: relative;
+            min-height: 300px;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0.1)),
+                        linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0.1));
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            opacity: 0.3;
+            z-index: 1;
+        }
+        .header .container {
+            position: relative;
+            z-index: 2;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+            font-weight: bold;
+            padding: 10px 0;
+        }
+        .header .subtitle {
+            font-size: 1.2em;
+            margin: 10px 0 20px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .header .banner {
+            background-color: rgba(255,255,255,0.9);
+            color: var(--text-color);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            display: inline-block;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        
+        /* セクション共通 */
+        .section {
+            padding: 60px 20px;
+            border-bottom: 1px solid #eee;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .section-title {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 10px auto 0;
+        }
+
+        /* おすすめボックス */
+        .recommendation-box {
+            background: var(--card-bg-color);
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            max-width: 600px;
+            border-left: 5px solid var(--accent-color);
+        }
+        .recommendation-box h3 {
+            color: var(--accent-color);
+            font-size: 1.3em;
+            margin: 0 0 20px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        .recommendation-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .recommendation-list li {
+            padding: 8px 0 8px 30px;
+            position: relative;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .recommendation-list li:last-child {
+            border-bottom: none;
+        }
+        .recommendation-list li::before {
+            content: '✓';
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 8px;
+            font-size: 1.2em;
+        }
+
+        /* 導入文 */
+        #intro p {
+            font-size: 1.1em;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 日程・申込 */
+        .schedule-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .schedule-list li {
+            background: var(--card-bg-color);
+            margin: 10px auto;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            font-weight: bold;
+            max-width: 400px;
+        }
+        .button {
+            display: block;
+            width: 80%;
+            max-width: 350px;
+            margin: 20px auto 0;
+            padding: 15px;
+            background: linear-gradient(135deg, var(--accent-color), #a4884f);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+        .line-button {
+             background: linear-gradient(135deg, #06C755, #00B900);
+        }
+
+        /* 講師紹介 */
+        .instructor-profile .text {
+            text-align: center;
+        }
+        .instructor-profile h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: var(--accent-color);
+        }
+        
+        /* カリキュラム (ロードマップ) */
+        .roadmap-container {
+            position: relative;
+            padding: 20px 0;
+        }
+         /* ステップ間の縦線 */
+        .roadmap-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 39px;
+            width: 4px;
+            background-color: #e0e0e0;
+            z-index: -1;
+        }
+        
+        .step {
+            margin-bottom: 20px;
+        }
+        .step details {
+            border: none;
+            background-color: var(--card-bg-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: box-shadow 0.3s;
+        }
+        .step details[open] {
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+        .step summary {
+            padding: 20px;
+            cursor: pointer;
+            list-style: none; /* markerを非表示 */
+            display: flex;
+            align-items: center;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .step summary::-webkit-details-marker {
+            display: none; /* Chrome */
+        }
+        .step-number {
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 0.9em;
+        }
+        .step-content {
+            padding: 0 20px 20px 80px;
+        }
+        .step-content ul {
+            list-style: none;
+            padding-left: 20px;
+            border-left: 2px solid var(--accent-color);
+        }
+        .step-content li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .step-content li::before {
+            content: '✓';
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: bold;
+        }
+
+        /* トップへ戻るボタン */
+        .to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+        }
+        .to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .to-top:hover {
+            transform: scale(1.1);
+        }
+        
+        /* フッター */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            background-color: var(--text-color);
+            color: #aaa;
+            font-size: 0.9em;
+        }
+
+        /* レスポンシブ対応 */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .header .subtitle {
+                font-size: 1em;
+            }
+            .step-content {
+                padding-left: 20px;
+            }
+            .roadmap-container::before {
+                left: 19px; /* モバイル用に調整 */
+            }
+            .step summary {
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>【参加無料】<br>AIライティング副業入門 勉強会</h1>
+            <p class="subtitle">クラウドソーシングサイトで副業案件を獲得するロードマップ</p>
+            <div class="banner">
+                初心者にも簡単・時短でOK！
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro" class="section">
+            <div class="container">
+                <p>「AI副業」は初心者にも簡単・時短でOKと言われても実際何からどう始めるの？とお悩みの方のための勉強会です。</p>
+                
+                <div class="recommendation-box">
+                    <h3>こんな方におススメです</h3>
+                    <ul class="recommendation-list">
+                        <li>SEOライター、セールスライターを目指す方</li>
+                        <li>AI副業にチャレンジしたい方</li>
+                        <li>SNSよりも深い訴求をしてファンづくりしたい方</li>
+                        <li>HPにブログを掲載してSEO強化したい方</li>
+                        <li>・・・etc</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="section">
+            <div class="container">
+                <h2 class="section-title">開催日時・お申し込み</h2>
+                <p style="text-align: center;">全日程共通内容です。ご都合が良い日をお選びください。</p>
+                <ul class="schedule-list">
+                    <li>① 7月26日 (土)⋅20:00～21:30</li>
+                    <li>② 7月29日 (火)⋅20:00～21:30</li>
+                    <li>③ 7月31日 (木)⋅20:00～21:30</li>
+                    <li>④ 8月2日 (土)⋅20:00～21:30</li>
+                </ul>
+                <a href="https://forms.gle/oAgRQ67abwiwMWwTA" target="_blank" class="button">お申し込みフォームはこちら</a>
+            </div>
+        </section>
+
+        <section id="line" class="section" style="background-color: var(--card-bg-color);">
+            <div class="container">
+                <h2 class="section-title">スケジュールが合わない方へ</h2>
+                <p style="text-align: center;">
+                    今回、残念ながらスケジュールが合わない方は、以下のLINE公式アカウントで今後の無料セミナー(不定期)のお知らせやAI学習教材のプレゼントを行っていますので、興味のある方はご登録ください✨
+                </p>
+                <a href="https://lin.ee/wcPr8Ym" target="_blank" class="button line-button">📱 LINE公式に登録する</a>
+            </div>
+        </section>
+
+        <section id="instructor" class="section">
+            <div class="container">
+                <h2 class="section-title">講師紹介</h2>
+                <div class="instructor-profile">
+                    <div class="text">
+                        <h3>神田 聡</h3>
+                        <p>広告・マーケティングの業界で30年以上にわたり、企業や自治体など様々な事業の活性化に情熱を注いできました。</p>
+                        <p>その活動を通して「人の心をプラスの方向に動かすことで訪れる喜び」を実感し、その原点は今でも私の志向の根幹にあります。</p>
+                        <p>生活者のニーズが細分化する中でスモールマーケティングというアプローチに出会い、その可能性に魅了され、実践しています。そして昨今の生成ＡＩの進化により限られた資源で効率的にワークする新しい手法により、これまで膨大な時間を要していた集客等の売れる仕組みづくりが簡単に、しかも自分でできる時代となりました。</p>
+                        <p>この素敵な技術を単に使って「凄い！」と感心するだけでなく、多くの方がビジネスの相棒としてAIとチームを組むことでビジネスを大きく成長させることができるよう応援します！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="section">
+            <div class="container">
+                <h2 class="section-title">カリキュラム</h2>
+                <div class="roadmap-container">
+                    
+                    <div class="step">
+                        <details>
+                            <summary><span class="step-number">1</span>どんな案件があるのか?</summary>
+                            <div class="step-content">
+                                <p>AIを活用できる副業案件の種類や具体的な仕事内容について解説します。自分のスキルや興味に合った案件を見つける第一歩です。</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="step">
+                        <details>
+                            <summary><span class="step-number">2</span>クラウドソーシングサイトを選定</summary>
+                            <div class="step-content">
+                                <p>数あるクラウドソーシングサイトの中から、初心者におすすめのサイトや、AI関連の案件が多いサイトの選び方を紹介します。</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="step">
+                        <details>
+                            <summary><span class="step-number">3</span>案件を探す</summary>
+                            <div class="step-content">
+                                <p>実際にサイト上で効率的に案件を探すためのキーワードや検索テクニックを学びます。</p>
+                            </div>
+                        </details>
+                    </div>
+                    
+                    <div class="step">
+                        <details>
+                            <summary><span class="step-number">4</span>案件に応募する準備</summary>
+                            <div class="step-content">
+                                <p>魅力的なプロフィールの作り方や、ポートフォリオの準備など、応募前に整えておくべきポイントを解説します。</p>
+                            </div>
+                        </details>
+                    </div>
+                    
+                    <div class="step">
+                        <details>
+                            <summary><span class="step-number">5</span>案件に応募し、AIで記事を制作</summary>
+                            <div class="step-content">
+                                <p>具体的な応募文の書き方から、受注後のAIを活用した記事制作のフローまでを実践的に学びます。</p>
+                                <ul>
+                                    <li><b>Step.5-1</b> クライアントからの依頼を確認 ➤ ペルソナ設定</li>
+                                    <li><b>Step.5-2</b> タイトルと記事の概要を作成</li>
+                                    <li><b>Step.5-3</b> 記事のアウトラインを生成</li>
+                                    <li><b>Step.5-4</b> 本文を生成</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 【参加無料】AIライティング副業入門 勉強会. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <button id="toTopBtn" class="to-top">↑</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // スクロールアニメーション
+            const sections = document.querySelectorAll('.section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // トップへ戻るボタン
+            const toTopBtn = document.getElementById('toTopBtn');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    toTopBtn.classList.add('visible');
+                } else {
+                    toTopBtn.classList.remove('visible');
+                }
+            });
+            toTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+        });
+    </script>
+
+</body>
+</html>
